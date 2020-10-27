@@ -1,0 +1,20 @@
+spring:
+  h2:
+    console:
+      enabled: true
+server:
+  port: 8081
+
+
+---
+spring:
+  profiles: test
+
+logging:
+  level: debug
+---
+spring:
+  profiles: prod
+
+logging:
+  level: info
